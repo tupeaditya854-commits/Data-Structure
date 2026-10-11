@@ -1,15 +1,18 @@
 #include <iostream>
 using namespace std;
 
-int main() {
+int main() 
+{
     int stack[5];
     int top = -1;
-    cout << "Enter 5 cancelled order numbers:\n";
-    for (int i = 0; i < 5; i++) {
+    cout << " Enter 5 cancelled order numbers : "<< endl;
+    for (int i = 0; i < 5; i++) 
+    {
         cin >> stack[++top];
     }
-    cout << "\nCancelled orders (most recent first):\n";
-    while (top >= 0) {
+    cout << "\n Cancelled orders (most recent first) : "<<endl;
+    while (top >= 0) 
+    {
         cout << stack[top] << endl;
         top--;
     }
